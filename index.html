@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>system prototype</title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div class="container">
+
+		<div id="left-container">
+			<img src="img/sia_logo.png" id="sia-logo">
+			<div class="category-container">
+				<div class="categories" id="current-category">
+					<img src="img/food_status.png" class="icons">
+					<h5 id="select">Current Food Status</h5>
+				</div>
+				<div class="categories">
+					<img src="img/suggesting_menus.png" class="icons">
+					<h5 class="category-text">Suggested Menus</h5>
+				</div>
+				<div class="categories">
+					<img src="img/menu_settings.png" class="icons">
+					<h5 class="category-text">Menu Settings</h5>
+				</div>
+				<div class="categories">
+					<img src="img/weekly_report.png" class="icons">
+					<h5 class="category-text">Weekly Report</h5>
+				</div>
+				<div class="categories">
+					<img src="img/map.png" class="icons">
+					<h5 class="category-text">Map</h5>
+				</div>
+				<div class="categories" id="settings">
+					<img src="img/settings.png" class="icons">
+					<h5 class="category-text">Settings</h5>
+				</div>
+			</div>
+		</div>
+
+		<div id="middle-container">
+
+			<!-- current food status list view -->
+
+			<div class="currentfoodstatus-list">
+					<div class="search bar">
+					<input type="text" placeholder="Search Recipe">
+				</div>
+				<div class="title">
+					<h3>Current Food Status</h3>
+					<img src="img/list_view.png" class="icons">
+					<img src="img/grid_view.png" class="icons">
+				</div>
+				<div class="food-type">
+					<span style="border-bottom-color: #082778; border-bottom-style: solid;"><h5>Hot Plates</h5></span>
+					<span><h5 style="color: #B9B9B9">Cold Plates</h5></span>
+					<span><h5 style="color: #B9B9B9">Dessert</h5></span>
+					<span><h5 style="color: #B9B9B9">Drinks</h5></span>
+				</div>
+
+				<div class="list-view">
+					<div class="rows">
+						<span class="dish-name"><h5 style="color: #B9B9B9">Dish Name</h5></span>
+						<span class="percentage"><h5 style="color: #B9B9B9">% left</h5></span>
+						<span class="finish-time"><h5 style="color: #B9B9B9">Estimated Finish Time</h5></span>
+					</div>
+					<div class="rows">
+						<span class="dish-name"><h5>French Fries</h5></span>
+						<span class="percentage"><h5>60%</h5></span>
+						<span class="finish-time"><h5>in 60 mins</h5></span>
+					</div>
+					<div class="rows">
+						<span class="dish-name"><h5>Fresh Fruits - Bananas</h5></span>
+						<span class="percentage"><h5>51%</h5></span>
+						<span class="finish-time"><h5>in 45 mins</h5></span>
+					</div>
+					<div class="rows">
+						<span class="dish-name"><h5 class="topup">Pork Belly with Steamed Bun</h5></span>
+						<span class="percentage"><h5 class="topup">30%</h5></span>
+						<span class="finish-time"><h5 class="topup">in 23 mins</h5></span>
+					</div>
+					<div class="rows">
+						<span class="dish-name"><h5>Roasted Chicken Legs</h5></span>
+						<span class="percentage"><h5>45%</h5></span>
+						<span class="finish-time"><h5>in 32 mins</h5></span>
+					</div>
+					<div class="rows">
+						<span class="dish-name"><h5>Almond Chocolate Cookies</h5></span>
+						<span class="percentage"><h5>90%</h5></span>
+						<span class="finish-time"><h5>in 1hr 31 mins</h5></span>
+					</div>
+					<div class="rows">
+						<span class="dish-name"><h5>Quinoa Bowl</h5></span>
+						<span class="percentage"><h5>70%</h5></span>
+						<span class="finish-time"><h5>in 56 mins</h5></span>
+					</div>
+					<div class="rows">
+						<span class="dish-name"><h5>Spaghetti with Minced Chicken</h5></span>
+						<span class="percentage"><h5>44%</h5></span>
+						<span class="finish-time"><h5>in 29 mins</h5></span>
+					</div>
+					<div class="rows">
+						<span class="dish-name"><h5>Pumpkin Soup</h5></span>
+						<span class="percentage"><h5>63%</h5></span>
+						<span class="finish-time"><h5>in 58 mins</h5></span>
+					</div>
+					<div class="rows">
+						<span class="dish-name"><h5 class="topup">Shrimp Fried Rice</h5></span>
+						<span class="percentage"><h5 class="topup">22%</h5></span>
+						<span class="finish-time"><h5 class="topup">in 18 mins</h5></span>
+					</div>
+					<div class="rows">
+						<span class="dish-name"><h5>Bread Pudding</h5></span>
+						<span class="percentage"><h5>50%</h5></span>
+						<span class="finish-time"><h5>in 44 mins</h5></span>
+					</div>
+					<div class="rows">
+						<span class="dish-name"><h5>Wonton Soup</h5></span>
+						<span class="percentage"><h5>55%</h5></span>
+						<span class="finish-time"><h5>in 48 mins</h5></span>
+					</div>
+				</div>				
+			</div>
+
+			<!-- suggested menu -->
+
+			<div class="suggested-menu">
+				<div class="title">
+					<h3>Suggested Menu</h3>
+				</div>
+
+				<div class="food-type">
+					<span style="border-bottom-color: #082778; border-bottom-style: solid;"><h5>This Week</h5></span>
+					<span><h5 style="color: #B9B9B9">Next Week</h5></span>
+				</div>
+
+				<div>
+					<div class="daily-menu">
+						<div class="date">
+							<h4>Today</h4>
+							<h3>October 6</h3>
+						</div>
+						<div>
+							<img src="img/suggested_menu01.jpg" class="suggested-menu-img">
+						</div>
+					</div>
+
+					<div class="daily-menu">
+						<div class="date">
+							<h4>Monday</h4>
+							<h3>October 7</h3>
+						</div>
+						<div>
+							<img src="img/suggested_menu02.jpg" class="suggested-menu-img">
+						</div>
+					</div>
+
+					<div class="daily-menu">
+						<div class="date">
+							<h4>Tuesday</h4>
+							<h3>October 8</h3>
+						</div>
+						<div>
+							<img src="img/suggested_menu03.jpg" class="suggested-menu-img">
+						</div>
+					</div>
+
+					<div class="daily-menu">
+						<div class="date">
+							<h4>Wednesday</h4>
+							<h3>October 9</h3>
+						</div>
+						<div>
+							<img src="img/suggested_menu04.jpg" class="suggested-menu-img">
+						</div>
+					</div>
+
+					<div class="daily-menu">
+						<div class="date">
+							<h4>Thursday</h4>
+							<h3>October 10</h3>
+						</div>
+						<div>
+							<img src="img/suggested_menu05.jpg" class="suggested-menu-img">
+						</div>
+					</div>
+
+					<div class="daily-menu">
+						<div class="date">
+							<h4>Friday</h4>
+							<h3>October 11</h3>
+						</div>
+						<div>
+							<img src="img/suggested_menu06.jpg" class="suggested-menu-img">
+						</div>
+					</div>
+
+					<div class="daily-menu">
+						<div class="date">
+							<h4>Saturday</h4>
+							<h3>October 12</h3>
+						</div>
+						<div>
+							<img src="img/suggested_menu07.jpg" class="suggested-menu-img">
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<!-- menu settings -->
+			<div class="menu-settings">
+				<div class="search bar">
+					<input type="text" placeholder="Search Recipe">
+				</div>
+				<div class="title">
+					<h3>Menu Settings</h3>
+					<img src="img/list_view.png" class="icons">
+				</div>
+				<div class="food-type">
+					<span style="border-bottom-color: #082778; border-bottom-style: solid;"><h5>Hot Plates</h5></span>
+					<span><h5 style="color: #B9B9B9">Cold Plates</h5></span>
+					<span><h5 style="color: #B9B9B9">Dessert</h5></span>
+					<span><h5 style="color: #B9B9B9">Drinks</h5></span>
+				</div>
+
+				<div class="menu-settings-menus">
+					<div class="menu-item">
+						<img src="img/menu-settings01.jpg">
+						<div class="item-description">
+							<h5>French Fries</h5>
+						</div>
+					</div>
+
+					<div class="menu-item">
+						<img src="img/menu-settings02.jpg">
+						<div class="item-description">
+							<h5>Fried Fish</h5>
+						</div>
+					</div>
+
+					<div class="menu-item">
+						<img src="img/menu-settings03.jpg">
+						<div class="item-description">
+							<h5>Cheese Burger</h5>
+						</div>
+					</div>
+
+					<div class="menu-item">
+						<img src="img/menu-settings04.jpg">
+						<div class="item-description">
+							<h5>Irish Stew</h5>
+						</div>
+					</div>
+
+					<div class="menu-item">
+						<img src="img/menu-settings05.jpg">
+						<div class="item-description">
+							<h5>Roast Chicken</h5>
+						</div>
+					</div>
+
+					<div class="menu-item">
+						<img src="img/menu-settings06.jpg">
+						<div class="item-description">
+							<h5>Roasted Vegetables</h5>
+						</div>
+					</div>
+
+					<div class="menu-item">
+						<img src="img/menu-settings07.jpg">
+						<div class="item-description">
+							<h5>Pork Belly</h5>
+						</div>
+					</div>
+
+					<div class="menu-item">
+						<img src="img/menu-settings08.jpg">
+						<div class="item-description">
+							<h5>Bacon</h5>
+						</div>
+					</div>
+
+					<div class="menu-item">
+						<img src="img/menu-settings09.jpg">
+						<div class="item-description">
+							<h5>Wonton</h5>
+						</div>
+					</div>
+
+					<div class="menu-item">
+						<img src="img/menu-settings10.jpg">
+						<div class="item-description">
+							<h5>Curry</h5>
+						</div>
+					</div>
+				</div>
+			</div>	
+
+			<!-- add recipes -->
+
+			<!-- weekly report -->
+
+			<!-- map -->
+			<div class="map">
+				<div class="title">
+					<h3 id="camera-title">Map</h3>
+				</div>
+
+				<div class="cameras">
+					<div class="camera-item">
+						<img src="img/menu-settings01.jpg">
+						<div class="camera-description">
+							<h5>Camera 1</h5>
+						</div>
+					</div>
+					<div class="camera-item">
+						<img src="img/menu-settings01.jpg">
+						<div class="camera-description">
+							<h5>Camera 2</h5>
+						</div>
+					</div>
+					<div class="camera-item">
+						<img src="img/menu-settings01.jpg">
+						<div class="camera-description">
+							<h5>Camera 3</h5>
+						</div>
+					</div>
+					<div class="camera-item">
+						<img src="img/menu-settings01.jpg">
+						<div class="camera-description">
+							<h5>Camera 4</h5>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- settings -->
+
+
+
+			
+		</div>
+
+		<div id="right-container">
+			<h3 style="margin-top: 0px;">Notifications</h3>
+			<h5>To Top Up</h5>
+				<div class="notification"></div>
+				<div class="notification"></div>
+				<div class="notification"></div>
+				<div class="notification"></div>
+			<h5>To Remove</h5>
+				<div class="notification"></div>
+		</div>
+	</div>
+
+
+
+	<script>
+	function openNav() {
+	  document.getElementById("mySidenav").style.width = "250px";
+	}
+
+	function closeNav() {
+	  document.getElementById("mySidenav").style.width = "0";
+	}
+	</script>
+
+</body>
+</html>

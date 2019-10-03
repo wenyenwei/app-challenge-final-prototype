@@ -1,0 +1,718 @@
+/*global styles*/
+
+html, body{
+	margin: 0px;
+	font-family: 'PT Serif', serif;
+}
+
+h5, h4, h3{
+	color: #082778;
+}
+
+.currentfoodstatus-list{
+	display: none;
+}
+
+/*.suggested-menu{
+	display: none;
+}*/
+
+.menu-settings{
+	display: none;
+}
+
+.map{
+	display: none;
+}
+
+.date{
+	margin-left: 15%;
+}
+
+.date h3{
+	color: #ffffff;
+	margin-top: 5px;
+}
+
+.date h4{
+	color: #ffffff;
+	opacity: 0.6;
+	margin-bottom: 5px;
+}
+
+
+/*For small screens*/
+
+@media only screen and (max-width: 599px) {
+  	
+
+
+  	h5{
+		margin-top: 10px;
+		margin-bottom: 10px;
+		color: #082778;
+		font-size: 0.73em;
+	}
+
+	h4{
+		color: #082778;
+		font-size: 0.8em;
+	}
+
+	h3{
+		font-size: 1em;
+	}
+
+	.container{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.category-container{
+		margin-top: 30px;
+	}
+
+	/*left*/
+
+	#sia-logo{
+		width: 40%;
+		margin-top: 10px;
+		margin-left: 7.5%;
+	}
+
+	#select{
+		color: white;
+	}
+
+	.categories{
+		display: grid;
+		grid-template-columns: 15% auto;
+		padding-left: 10px;
+		margin-top: 8px;
+	}
+
+	.icons{
+		width: 18px;
+		padding-left: 35%;
+		padding-top: 12%;
+	}
+
+	#current-category{
+		background-image: linear-gradient(to right, #00266B , #96A3B9);
+	}
+
+	#left-container{
+		display: block;
+		float: left;
+		background-color: #F7F7F7;
+	}
+
+	/*middle*/
+
+	#middle-container{
+		margin-left: 5%;
+		margin-right: 5%;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	input{
+		font-family: 'PT Serif', serif;
+		width: 90%;
+	    padding-top: 7px;
+	    padding-bottom: 7px;
+	    padding-left: 15px;
+	    border-radius: 15px;
+	    border-style: solid;
+	    border-width: 1px;
+	    border-color: #082778;
+	}
+
+
+	.title{
+		display:grid;
+		grid-template-columns: 80% auto auto auto auto auto auto;
+		margin-top: 15px;
+	}
+
+	.title .icons{
+		padding-left: 0px;
+		position: relative;
+	    top: 0;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+	    margin: auto;
+	}
+
+	.food-type{
+		text-align: center;
+		display: grid;
+		grid-template-columns: auto auto auto auto auto;
+		width: 90%;
+		border-bottom-style: solid;
+		border-bottom-width: 1.4px;
+		border-color: #B9B9B9;
+	}
+
+	.list-view{
+		display: grid;
+	    grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px;
+	    margin-top: 20px;
+	}
+
+	.rows{
+		display: grid;
+		grid-template-columns: 50% 20% 30%;
+	}
+
+	.topup{
+		color: #FCB130;
+	}
+
+	/*suggested menu middle*/
+	.daily-menu{
+		width: 90%;
+		height: 130px;
+		background-color: #082778;
+		margin-top: 12px;
+		display: grid;
+		grid-template-columns: 40% 60%;
+		box-shadow: 4px 4px 17px 0px rgba(222,222,222,1);
+	}
+
+	.suggested-menu-img{
+		width: auto; 
+		height: auto; 
+		max-height: 130px; 
+		object-fit: cover;
+	}
+
+	/*menu settins middle*/
+	.menu-settings-menus{
+		display: grid;
+		grid-template-columns: 90%; 
+	}
+
+	.menu-item{
+		/*width: 30%;*/
+		margin-top: 20px;
+	}
+
+	.menu-item img{
+		max-width: 100%;
+		height: auto;
+		width: auto;
+		object-fit: cover;
+	}
+
+	.item-description{
+		text-align: center;
+		border-style: solid;
+		border-width: 1.5px;
+		border-color: #082778; 
+	}
+
+	.item-description h5{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	/*map middle*/
+	.cameras{
+		display: grid;
+		grid-template-columns: 90%;
+	}
+
+	.camera-item{
+		margin-top: 20px;
+	}
+
+	.camera-item img{
+		max-width: 100%;
+		height: auto;
+		width: auto;
+		object-fit: cover;
+	}
+
+	.camera-description{
+		text-align: center;
+		border-style: solid;
+		border-width: 1.5px;
+		border-color: #082778; 
+	}
+
+	.camera-description h3{
+		font-size: 0.8em;
+		margin-top: 12px;
+		margin-bottom: 12px;
+	}
+
+	#camera-title{
+		margin: 0px;
+	}
+
+
+	/*right container*/
+
+	#right-container{
+		display: block;
+		float: left;
+		padding-left: 7%;
+		padding-top: 30px;
+		background-color: #F7F7F7;
+		padding-bottom: 30px;
+	}
+
+	.notification{
+		width: 93%;
+		height: 35px;
+		margin-top: 10px;
+		background-color: #082778; 
+	}
+
+}
+
+
+/* For tablets: */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  	h5{
+		margin-top: 10px;
+		margin-bottom: 10px;
+		color: #082778;
+		font-size: 0.73em;
+	}
+
+	h4{
+		color: #082778;
+		font-size: 0.8em;
+	}
+
+	h3{
+		font-size: 1em;
+	}
+
+	.container{
+		display: grid;
+		grid-template-columns: 20vw auto 25vw;
+	    grid-template-rows: 100vh;
+	}
+
+	.category-container{
+		margin-top: 80px;
+	}
+
+	/*left*/
+
+	#sia-logo{
+		width: 85%;
+		margin-left: 7.5%;
+	}
+
+	#select{
+		color: white;
+	}
+
+	.categories{
+		display: grid;
+		grid-template-columns: auto;
+		padding-left: 10px;
+	}
+
+	.icons{
+		display: none;
+	}
+
+	#current-category{
+		background-image: linear-gradient(to right, #00266B , #96A3B9);
+	}
+
+	#left-container{
+		padding-top: 10%;
+		background-color: #F7F7F7;
+	}
+
+	/*middle*/
+
+	#middle-container{
+		padding-top: 30px;
+		padding-bottom: 50px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	input{
+		font-family: 'PT Serif', serif;
+		width: 90%;
+	    padding-top: 7px;
+	    padding-bottom: 7px;
+	    padding-left: 15px;
+	    border-radius: 15px;
+	    border-style: solid;
+	    border-width: 1px;
+	    border-color: #082778;
+	}
+
+
+	.title{
+		display:grid;
+		grid-template-columns: 80% auto auto auto auto auto auto;
+		margin-top: 30px;
+	}
+
+	.title .icons{
+		padding-left: 0px;
+		position: relative;
+	    top: 0;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+	    margin: auto;
+	}
+
+	.food-type{
+		text-align: center;
+		display: grid;
+		grid-template-columns: auto auto auto auto auto;
+		width: 90%;
+		border-bottom-style: solid;
+		border-bottom-width: 1.4px;
+		border-color: #B9B9B9;
+	}
+
+	.list-view{
+		display: grid;
+	    grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px;
+	    margin-top: 20px;
+	}
+
+	.rows{
+		display: grid;
+		grid-template-columns: 50% 20% 30%;
+	}
+
+	.topup{
+		color: #FCB130;
+	}
+
+	/*suggested menu middle*/
+	.daily-menu{
+		width: 90%;
+		height: 160px;
+		background-color: #082778;
+		margin-top: 15px;
+		display: grid;
+		grid-template-columns: 40% 60%;
+		box-shadow: 4px 4px 17px 0px rgba(222,222,222,1);
+	}
+
+	.suggested-menu-img{
+		width: auto; 
+		height: auto; 
+		max-height: 160px; 
+		object-fit: cover;
+	}
+
+	/*menu settins middle*/
+	.menu-settings-menus{
+		display: grid;
+		grid-template-columns: 43% 43%; 
+	}
+
+	.menu-item{
+		/*width: 30%;*/
+		margin-top: 17px;
+		margin-left: 1%;
+	}
+
+	.menu-item img{
+		max-width: 100%;
+		height: auto;
+		width: auto;
+		object-fit: cover;
+	}
+
+	.item-description{
+		text-align: center;
+		border-style: solid;
+		border-width: 1.2px;
+		border-color: #082778; 
+	}
+
+	.item-description h5{
+		margin-top: 8px;
+		margin-bottom: 8px;
+	}
+
+		/*map middle*/
+	.cameras{
+		display: grid;
+		grid-template-columns: 44% 44%;
+	}
+
+	.camera-item{
+		margin-top: 20px;
+		margin-left: 1%;
+	}
+
+	.camera-item img{
+		max-width: 100%;
+		height: auto;
+		width: auto;
+		object-fit: cover;
+	}
+
+	.camera-description{
+		text-align: center;
+		border-style: solid;
+		border-width: 2px;
+		border-color: #082778; 
+	}
+
+	.camera-description h3{
+		font-size: 0.8em;
+		margin-top: 12px;
+		margin-bottom: 12px;
+	}
+
+	#camera-title{
+		margin: 0px;
+	}
+
+	/*right container*/
+
+	#right-container{
+		padding-left: 7%;
+		padding-top: 30px;
+		background-color: #F7F7F7;
+	}
+
+	.notification{
+		width: 93%;
+		height: 35px;
+		margin-top: 10px;
+		background-color: #082778; 
+	}
+}
+
+/* For desktop: */
+@media only screen and (min-width: 768px) {  
+	h5{
+		margin-top: 15px;
+		margin-bottom: 15px;
+		color: #082778;
+	}
+
+	h4{
+		color: #082778;
+	}
+
+	.container{
+		display: grid;
+		grid-template-columns: 20vw auto 25vw;
+	    grid-template-rows: 100vh;
+	}
+
+	.category-container{
+		margin-top: 80px;
+	}
+
+	/*left*/
+	#sia-logo{
+		width: 60%; 
+		margin-left: 0px;
+		padding-left: 10%;
+	}
+
+	#select{
+		color: white;
+	}
+
+	.categories{
+		display: grid;
+		grid-template-columns: 30% auto;
+	}
+
+	.icons{
+		width: 20px;
+		padding-left: 35%;
+		padding-top: 20%;
+	    /*padding-top: 30%;*/
+	}
+
+	#current-category{
+		background-image: linear-gradient(to right, #00266B , #96A3B9);
+	}
+
+	#left-container{
+		padding-top: 10%;
+		margin-right: 15px;
+		background-color: #F7F7F7;
+	}
+
+	/*middle*/
+
+	#middle-container{
+		padding-top: 30px;
+		margin-bottom: 50px;
+		padding-left: 30px;
+	}
+
+	input{
+		font-family: 'PT Serif', serif;
+		width: 90%;
+	    padding-top: 7px;
+	    padding-bottom: 7px;
+	    padding-left: 15px;
+	    border-radius: 15px;
+	    border-style: solid;
+	    border-width: 1px;
+	    border-color: #082778;
+	}
+
+
+	.title{
+		display:grid;
+		grid-template-columns: 80% auto auto auto auto auto auto;
+		margin-top: 30px;
+	}
+
+	.title .icons{
+		padding-left: 0px;
+		position: relative;
+	    top: 0;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+	    margin: auto;
+	}
+
+	.food-type{
+		text-align: center;
+		display: grid;
+		grid-template-columns: auto auto auto auto auto;
+		width: 90%;
+		border-bottom-style: solid;
+		border-bottom-width: 1.4px;
+		border-color: #B9B9B9;
+	}
+
+	.list-view{
+		display: grid;
+	    grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px;
+	    margin-top: 20px;
+	}
+
+	.rows{
+		display: grid;
+		grid-template-columns: 45% 20% 25% auto;
+	}
+
+	.topup{
+		color: #FCB130;
+	}
+
+	/*suggested menu middle*/
+	.daily-menu{
+		width: 90%;
+		height: 180px;
+		background-color: #082778;
+		margin-top: 20px;
+		display: grid;
+		grid-template-columns: 30% 70%;
+		box-shadow: 6px 6px 17px 0px rgba(222,222,222,1);
+	}
+
+	.suggested-menu-img{
+		width: auto; 
+		height: auto; 
+		max-height: 180px; 
+		object-fit: cover;
+	}
+
+	/*menu settings middle*/
+	.menu-settings-menus{
+		display: grid;
+		grid-template-columns: 29% 29% 29%; 
+	}
+
+	.menu-item{
+		/*width: 30%;*/
+		margin-top: 30px;
+		margin-left: 1%;
+	}
+
+	.menu-item img{
+		max-width: 100%;
+		height: auto;
+		width: auto;
+		object-fit: cover;
+	}
+
+	.item-description{
+		text-align: center;
+		border-style: solid;
+		border-width: 2px;
+		border-color: #082778; 
+	}
+
+	.item-description h5{
+		font-size: 0.8em;
+		margin-top: 12px;
+		margin-bottom: 12px;
+	}
+
+
+	/*map middle*/
+	.cameras{
+		display: grid;
+		grid-template-columns: 44% 44%;
+	}
+
+	.camera-item{
+		margin-top: 30px;
+		margin-left: 1%;
+	}
+
+	.camera-item img{
+		max-width: 100%;
+		height: auto;
+		width: auto;
+		object-fit: cover;
+	}
+
+	.camera-description{
+		text-align: center;
+		border-style: solid;
+		border-width: 2px;
+		border-color: #082778; 
+	}
+
+	.camera-description h3{
+		font-size: 0.8em;
+		margin-top: 12px;
+		margin-bottom: 12px;
+	}
+
+	#camera-title{
+		margin: 0px;
+	}
+
+
+	/*right container*/
+
+	#right-container{
+		padding-left: 10%;
+		padding-top: 30px;
+		background-color: #F7F7F7;
+	}
+
+	.notification{
+		width: 90%;
+		height: 35px;
+		margin-top: 10px;
+		background-color: #082778; 
+	}
+
+}
+
