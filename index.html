@@ -44,10 +44,7 @@
 
 			<!-- current food status list view -->
 
-			<div class="currentfoodstatus-list">
-					<div class="search bar">
-					<input type="text" placeholder="Search Recipe">
-				</div>
+			<div class="currentfoodstatus">
 				<div class="title">
 					<h3>Current Food Status</h3>
 					<img src="img/list_view.png" class="icons">
@@ -60,75 +57,151 @@
 					<span><h5 style="color: #B9B9B9">Drinks</h5></span>
 				</div>
 
-				<div class="list-view">
-					<div class="rows">
-						<span class="dish-name"><h5 style="color: #B9B9B9">Dish Name</h5></span>
-						<span class="percentage"><h5 style="color: #B9B9B9">% left</h5></span>
-						<span class="finish-time"><h5 style="color: #B9B9B9">Estimated Finish Time</h5></span>
-					</div>
-					<div class="rows">
-						<span class="dish-name"><h5>French Fries</h5></span>
-						<span class="percentage"><h5>60%</h5></span>
-						<span class="finish-time"><h5>in 60 mins</h5></span>
-					</div>
-					<div class="rows">
-						<span class="dish-name"><h5>Fresh Fruits - Bananas</h5></span>
-						<span class="percentage"><h5>51%</h5></span>
-						<span class="finish-time"><h5>in 45 mins</h5></span>
-					</div>
-					<div class="rows">
-						<span class="dish-name"><h5 class="topup">Pork Belly with Steamed Bun</h5></span>
-						<span class="percentage"><h5 class="topup">30%</h5></span>
-						<span class="finish-time"><h5 class="topup">in 23 mins</h5></span>
-					</div>
-					<div class="rows">
-						<span class="dish-name"><h5>Roasted Chicken Legs</h5></span>
-						<span class="percentage"><h5>45%</h5></span>
-						<span class="finish-time"><h5>in 32 mins</h5></span>
-					</div>
-					<div class="rows">
-						<span class="dish-name"><h5>Almond Chocolate Cookies</h5></span>
-						<span class="percentage"><h5>90%</h5></span>
-						<span class="finish-time"><h5>in 1hr 31 mins</h5></span>
-					</div>
-					<div class="rows">
-						<span class="dish-name"><h5>Quinoa Bowl</h5></span>
-						<span class="percentage"><h5>70%</h5></span>
-						<span class="finish-time"><h5>in 56 mins</h5></span>
-					</div>
-					<div class="rows">
-						<span class="dish-name"><h5>Spaghetti with Minced Chicken</h5></span>
-						<span class="percentage"><h5>44%</h5></span>
-						<span class="finish-time"><h5>in 29 mins</h5></span>
-					</div>
-					<div class="rows">
-						<span class="dish-name"><h5>Pumpkin Soup</h5></span>
-						<span class="percentage"><h5>63%</h5></span>
-						<span class="finish-time"><h5>in 58 mins</h5></span>
-					</div>
-					<div class="rows">
-						<span class="dish-name"><h5 class="topup">Shrimp Fried Rice</h5></span>
-						<span class="percentage"><h5 class="topup">22%</h5></span>
-						<span class="finish-time"><h5 class="topup">in 18 mins</h5></span>
-					</div>
-					<div class="rows">
-						<span class="dish-name"><h5>Bread Pudding</h5></span>
-						<span class="percentage"><h5>50%</h5></span>
-						<span class="finish-time"><h5>in 44 mins</h5></span>
-					</div>
-					<div class="rows">
-						<span class="dish-name"><h5>Wonton Soup</h5></span>
-						<span class="percentage"><h5>55%</h5></span>
-						<span class="finish-time"><h5>in 48 mins</h5></span>
-					</div>
-				</div>				
+				<div class="currentfoodstatus-list">
+					<div class="list-view">
+						<div class="rows">
+							<span class="dish-name"><h5 style="color: #B9B9B9">Dish Name</h5></span>
+							<span class="percentage"><h5 style="color: #B9B9B9">% left</h5></span>
+							<span class="finish-time"><h5 style="color: #B9B9B9">Estimated Finish Time</h5></span>
+						</div>
+						<div class="rows">
+							<span class="dish-name"><h5>French Fries</h5></span>
+							<span class="percentage"><h5>60%</h5></span>
+							<span class="finish-time"><h5>in 60 mins</h5></span>
+						</div>
+						<div class="rows">
+							<span class="dish-name"><h5>Fresh Fruits - Apples</h5></span>
+							<span class="percentage"><h5>51%</h5></span>
+							<span class="finish-time"><h5>in 45 mins</h5></span>
+						</div>
+						<div class="rows">
+							<span class="dish-name"><h5 class="topup">Pork Belly with Steamed Bun</h5></span>
+							<span class="percentage"><h5 class="topup">30%</h5></span>
+							<span class="finish-time"><h5 class="topup">in 23 mins</h5></span>
+						</div>
+						<div class="rows">
+							<span class="dish-name"><h5>Roasted Chicken Legs</h5></span>
+							<span class="percentage"><h5>45%</h5></span>
+							<span class="finish-time"><h5>in 32 mins</h5></span>
+						</div>
+						<div class="rows">
+							<span class="dish-name"><h5>Almond Chocolate Cookies</h5></span>
+							<span class="percentage"><h5>90%</h5></span>
+							<span class="finish-time"><h5>in 1hr 31 mins</h5></span>
+						</div>
+						<div class="rows">
+							<span class="dish-name"><h5>Quinoa Bowl</h5></span>
+							<span class="percentage"><h5>70%</h5></span>
+							<span class="finish-time"><h5>in 56 mins</h5></span>
+						</div>
+						<div class="rows">
+							<span class="dish-name"><h5>Spaghetti with Minced Chicken</h5></span>
+							<span class="percentage"><h5>44%</h5></span>
+							<span class="finish-time"><h5>in 29 mins</h5></span>
+						</div>
+						<div class="rows">
+							<span class="dish-name"><h5>Pumpkin Soup</h5></span>
+							<span class="percentage"><h5>63%</h5></span>
+							<span class="finish-time"><h5>in 58 mins</h5></span>
+						</div>
+						<div class="rows">
+							<span class="dish-name"><h5 class="topup">Shrimp Fried Rice</h5></span>
+							<span class="percentage"><h5 class="topup">22%</h5></span>
+							<span class="finish-time"><h5 class="topup">in 18 mins</h5></span>
+						</div>
+						<div class="rows">
+							<span class="dish-name"><h5>Bread Pudding</h5></span>
+							<span class="percentage"><h5>50%</h5></span>
+							<span class="finish-time"><h5>in 44 mins</h5></span>
+						</div>
+						<div class="rows">
+							<span class="dish-name"><h5>Wonton Soup</h5></span>
+							<span class="percentage"><h5>55%</h5></span>
+							<span class="finish-time"><h5>in 48 mins</h5></span>
+						</div>
+					</div>					
+				</div>
+
+				<!-- current food status grid view	 -->
+
+				<div class="currentfoodstatus-grid">
+					<div class="menu-settings-menus">
+						<div class="menu-item">
+							<img src="img/menu-settings01.jpg">
+							<div class="item-description">
+								<h5>French Fries<br>60%</h5>
+							</div>
+						</div>
+						<div class="menu-item">
+							<img src="img/grid02.jpg">
+							<div class="item-description">
+								<h5>Fresh Fruits - Apples<br>51%</h5>
+							</div>
+						</div>
+						<div class="menu-item">
+							<img src="img/grid03.jpg">
+							<div class="item-description">
+								<h5>Pork Belly<br>30%</h5>
+							</div>
+						</div>
+						<div class="menu-item">
+							<img src="img/grid04.jpg">
+							<div class="item-description">
+								<h5>Roasted Chicken<br>45%</h5>
+							</div>
+						</div>
+						<div class="menu-item">
+							<img src="img/grid05.jpg">
+							<div class="item-description">
+								<h5>Almond Chocolate Cookies<br>90%</h5>
+							</div>
+						</div>
+						<div class="menu-item">
+							<img src="img/grid06.jpg">
+							<div class="item-description">
+								<h5>Quinoa Bowl<br>70%</h5>
+							</div>
+						</div>
+						<div class="menu-item">
+							<img src="img/grid07.jpg">
+							<div class="item-description">
+								<h5>Spaghetti<br>44%</h5>
+							</div>
+						</div>
+						<div class="menu-item">
+							<img src="img/grid08.jpg">
+							<div class="item-description">
+								<h5>Pumpkin Soup<br>63%</h5>
+							</div>
+						</div>
+						<div class="menu-item">
+							<img src="img/grid09.jpg">
+							<div class="item-description">
+								<h5>Shrimp Fried Rice<br>22%</h5>
+							</div>
+						</div>
+						<div class="menu-item">
+							<img src="img/menu-settings01.jpg">
+							<div class="item-description">
+								<h5>Bread Pudding<br>50%</h5>
+							</div>
+						</div>
+						<div class="menu-item">
+							<img src="img/menu-settings09.jpg">
+							<div class="item-description">
+								<h5>Wonton Soup<br>55%</h5>
+							</div>
+						</div>
+					</div>	
+				</div>	
+
 			</div>
 
 			<!-- suggested menu -->
 
-			<div class="suggested-menu">
+			<div class="suggested-menu" style="margin-bottom: 50px;">
 				<div class="title">
-					<h3>Suggested Menu</h3>
+					<h3>Suggested Menus</h3>
 				</div>
 
 				<div class="food-type">
@@ -214,11 +287,11 @@
 			<!-- menu settings -->
 			<div class="menu-settings">
 				<div class="search bar">
-					<input type="text" placeholder="Search Recipe">
+					<input type="text" placeholder="Search Recipe" class="search">
 				</div>
 				<div class="title">
 					<h3>Menu Settings</h3>
-					<img src="img/list_view.png" class="icons">
+					<button style="height: 3em; background-color: #082778; color: white; border-width: 0px; font-family: 'PT Serif', serif; margin-top: 13%;">Add Recipe</button>
 				</div>
 				<div class="food-type">
 					<span style="border-bottom-color: #082778; border-bottom-style: solid;"><h5>Hot Plates</h5></span>
@@ -301,36 +374,273 @@
 			</div>	
 
 			<!-- add recipes -->
+			<div class="add-recipe" style="margin-bottom: 50px;">
+				<div class="recipe-title">
+					<h3><</h3>
+					<h3>Add Recipe</h3>
+				</div>
+
+				<!-- form -->
+				<form class="forms">
+					<div class="form-container">
+						<div class="new-recipe-items">
+							<h5>Recipe Name</h5>
+							<input type="text" name="firstname" class="input-text" placeholder="Recipe Name">
+						</div>
+						<div class="new-recipe-items">
+							<h5>Recipe Image</h5>
+							<input type="file" name="myImage" class="file">
+						</div>
+						<div class="new-recipe-items">
+							<h5>Category</h5>
+							<select name="category" class="select-item">
+								<option value="0">Not selected yet</option>
+								<option value="1">Meat</option>
+								<option value="2">Vegetable</option>
+								<option value="3">Gluten Free</option>
+								<option value="4">Low Carb</option>
+							</select>
+						</div>
+						<div class="new-recipe-items">
+							<h5>Food Type</h5>
+							<select name="type" class="select-item">
+							    <option value="0">Not selected yet</option>
+								<option value="1">Hot Plate</option>
+								<option value="2">Cold Plate</option>
+								<option value="3">Dessert</option>
+								<option value="4">Drink</option>
+							</select>
+						</div>
+						<div class="new-recipe-items">
+							<h5>Meal</h5>
+							<select name="Meal" class="select-item">
+							  <option value="0">Not selected yet</option>
+							  <option value="1">Breakfast</option>
+							  <option value="2">Lunch</option>
+							  <option value="3">Dinner</option>
+							  <option value="4">Snack</option>
+							</select>
+						</div>
+						<div class="new-recipe-items"></div>
+						<div class="new-recipe-items">
+							<h5>Preperation Time</h5>
+							<select name="category" class="select-item">
+							  <option value="0">Not selected yet</option>
+							  <option value="1">less than 30 mins</option>
+							  <option value="2">30 mins - 1 hr</option>
+							  <option value="3">1 hr - 1.5 hrs</option>
+							  <option value="4">1.5 hrs - 2 hrs</option>
+							  <option value="5">2 hrs - 2.5 hrs</option>
+							  <option value="6">2.5 hrs - 3 hrs</option>
+							  <option value="7">3 hrs - 3.5 hrs</option>
+							  <option value="8">3.5 hrs - 4 hrs</option>
+							</select>
+						</div>
+						<div class="new-recipe-items">
+							<h5>Yield</h5>
+							<input type="text" name="firstname" class="input-text" placeholder="Servings">
+						</div>
+					</div>
+
+					<div>
+						<h5>Ingredients</h5>
+						<div class="last-items">
+							<input type="text" name="firstname" class="input-text" placeholder="Ingredient Name">
+							<input type="text" name="firstname" class="input-text" placeholder="Cup/ Tablespoon/ etc.">
+							<img src="img/delete.png" class="icons">
+						</div>
+						<div class="last-items">
+							<input type="text" name="firstname" class="input-text" placeholder="Ingredient Name">
+							<input type="text" name="firstname" class="input-text" placeholder="Cup/ Tablespoon/ etc.">
+							<img src="img/delete.png" class="icons">
+						</div>
+						<div class="last-items">
+							<input type="text" name="firstname" class="input-text" placeholder="Ingredient Name">
+							<input type="text" name="firstname" class="input-text" placeholder="Cup/ Tablespoon/ etc.">
+							<img src="img/delete.png" class="icons">
+						</div>
+
+						<div class="last">
+							<button class="form-button">Add Ingredients</button>
+							<h5 class="bottom-text">or</h5>
+							<h5 class="bottom-text">Multiple Recipes</h5>
+							<!-- <input type="file" name="myrecipefile" class="file"> -->
+							<button class="form-button">Upload .csv from your computer</button>
+							<button id="save" class="form-button">Save Recipe</button>
+							<button id="delete" class="form-button">Delete Recipe</button>
+						</div>
+
+					</div>
+				</form> 
+				
+			</div>
 
 			<!-- weekly report -->
+			<div class="weekly-report" style="margin-bottom: 50px;">
+				<div class="title">
+					<h3>Weekly Report</h3>
+					<!-- <h5 style="background-color: #082778; color: white; text-align: center;">Export Report</h5> -->
+					<button style="height: 3em; background-color: #082778; color: white; border-width: 0px; font-family: 'PT Serif', serif; margin-top: 13%;">Export Report</button>
+				</div>
+
+				<div>
+					<h4>Topped Up & Food Consumed</h4>
+				</div>
+				<table class="report-table">
+					<tr>
+						<th class="section-category">Food Categories</th>
+						<th class="section-category"></th>
+						<th class="section-category">Topped up times / day</th>
+						<th class="section-category">Food consummed servings/ day</th>
+						<th class="section-category">Serving delay hours/ day</th>
+						<th class="section-category"></th>
+					</tr>
+					<tr style="height: 20%;"></tr>
+					<tr>
+						<th>Hot Plates</th>
+						<th class="action">Download Data</th>
+						<th>25</th>
+						<th>66</th>
+						<th>2.8</th>
+						<th class="action">View Details</th>
+					</tr>
+					<tr>
+						<th>Cold Plates</th>
+						<th class="action">Download Data</th>
+						<th>21</th>
+						<th>72</th>
+						<th>2.9</th>
+						<th class="action">View Details</th>
+					</tr>
+					<tr>
+						<th>Desserts</th>
+						<th class="action">Download Data</th>
+						<th>33</th>
+						<th>112</th>
+						<th>3.7</th>
+						<th class="action">View Details</th>
+					</tr>
+					<tr>
+						<th>Drinks</th>
+						<th class="action">Download Data</th>
+						<th>22</th>
+						<th>88</th>
+						<th>3.1</th>
+						<th class="action">View Details</th>
+					</tr>
+				</table>
+
+				<div>
+					<h4>Food Waste</h4>
+				</div>
+				<table class="report-table">
+					<tr>
+						<th class="section-category">Food Categories</th>
+						<th class="section-category"></th>
+						<th class="section-category">daily food waste servings/ daily</th>
+						<th class="section-category"></th>
+					</tr>
+					<tr style="height: 20%;"></tr>
+					<tr>
+						<th>Hot Plates</th>
+						<th class="action">Download Data</th>
+						<th>15</th>
+						<th class="action">View Details</th>
+					</tr>
+					<tr>
+						<th>Cold Plates</th>
+						<th class="action">Download Data</th>
+						<th>16</th>
+						<th class="action">View Details</th>
+					</tr>
+					<tr>
+						<th>Desserts</th>
+						<th class="action">Download Data</th>
+						<th>10</th>
+						<th class="action">View Details</th>
+					</tr>
+					<tr>
+						<th>Drinks</th>
+						<th class="action">Download Data</th>
+						<th>9</th>
+						<th class="action">View Details</th>
+					</tr>
+				</table>
+
+				<div>
+					<h4>Popular Dishes</h4>
+				</div>
+				<table class="report-table">
+					<tr>
+						<th class="section-category">Ranking</th>
+						<th class="section-category">Name</th>
+						<th class="section-category">Total Consumed Weekly</th>
+						<th class="section-category">Total Waste Weekly</th>
+					</tr>
+					<tr style="height: 20%;"></tr>
+					<tr>
+						<th>Top 1</th>
+						<th>French Fries</th>
+						<th>55 servings</th>
+						<th>7 servings</th>
+					</tr>
+					<tr>
+						<th>Top 2</th>
+						<th>Small Cheese Burger</th>
+						<th>50 servings</th>
+						<th>7 servings</th>
+					</tr>
+					<tr>
+						<th>Top 3</th>
+						<th>Herb Roast Chicken</th>
+						<th>48 servings</th>
+						<th>8 servings</th>
+					</tr>
+					<tr>
+						<th>Top 4</th>
+						<th>Mango Shaved Ice</th>
+						<th>47 servings</th>
+						<th>9 servings</th>
+					</tr>
+					<tr>
+						<th>Top 5</th>
+						<th>Watermelon Juice</th>
+						<th>45 servings</th>
+						<th>8 servings</th>
+					</tr>
+				</table>
+
+			</div>
+
 
 			<!-- map -->
 			<div class="map">
 				<div class="title">
 					<h3 id="camera-title">Map</h3>
+					<button style="height: 3em; background-color: #082778; color: white; border-width: 0px; font-family: 'PT Serif', serif; margin-top: 13%;">Add Camera</button>
 				</div>
 
 				<div class="cameras">
 					<div class="camera-item">
-						<img src="img/menu-settings01.jpg">
+						<img src="img/camera1.jpg" class="map-image">
 						<div class="camera-description">
 							<h5>Camera 1</h5>
 						</div>
 					</div>
 					<div class="camera-item">
-						<img src="img/menu-settings01.jpg">
+						<img src="img/camera2.jpg" class="map-image">
 						<div class="camera-description">
 							<h5>Camera 2</h5>
 						</div>
 					</div>
 					<div class="camera-item">
-						<img src="img/menu-settings01.jpg">
+						<img src="img/camera3.jpg" class="map-image">
 						<div class="camera-description">
 							<h5>Camera 3</h5>
 						</div>
 					</div>
 					<div class="camera-item">
-						<img src="img/menu-settings01.jpg">
+						<img src="img/camera4.jpg" class="map-image">
 						<div class="camera-description">
 							<h5>Camera 4</h5>
 						</div>
@@ -349,7 +659,10 @@
 		<div id="right-container">
 			<h3 style="margin-top: 0px;">Notifications</h3>
 			<h5>To Top Up</h5>
-				<div class="notification"></div>
+				<div class="notification" id="expand">
+					<button class="expand-button" style="margin-left: 0.5%;">Ready</button>
+					<button class="expand-button">Skip</button>
+				</div>
 				<div class="notification"></div>
 				<div class="notification"></div>
 				<div class="notification"></div>
